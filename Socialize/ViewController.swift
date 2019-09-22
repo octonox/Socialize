@@ -19,10 +19,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func connect() {
-        if Compte.doesExist(pseudo: username.text!) {
+        let usr = username.text!
+        let pswd = username.text!
+        
+        if Compte.doesExist(pseudo: usr) {
             //Blablabla
-            if Compte.passwordIsGood(password: password.text!) {
+            if Compte.passwordIsGood(password: pswd) {
                 //Blablabla
+                let account = Compte(pseudo: usr, password: pswd) //Creates the account and gets the datas
+                
+                account.getDatas()
             }
         }
         else {

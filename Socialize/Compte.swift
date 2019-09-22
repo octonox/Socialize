@@ -22,6 +22,10 @@ class Compte {
         self._edt = getEdt()
     }
     
+    func getDatas() {
+        //Gets the datas from the database
+    }
+    
     static func doesExist(pseudo: String) -> Bool {
         //Checks if the account exists in the database or not
         return true
