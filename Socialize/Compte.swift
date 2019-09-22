@@ -22,6 +22,16 @@ class Compte {
         self._edt = getEdt()
     }
     
+    static func doesExist(pseudo: String) -> Bool {
+        //Checks if the account exists in the database or not
+        return true
+    }
+    
+    static func passwordIsGood(password: String) -> Bool {
+        //Checks if the password is good, and usually thee password must be encrypted
+        return true
+    }
+
     //Gets the timetable in the database
     func getEdt() -> [Timetable]? {
         return nil

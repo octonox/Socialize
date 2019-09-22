@@ -19,7 +19,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func connect() {
-        
+        if Compte.doesExist(pseudo: username.text!) {
+            //Blablabla
+            if Compte.passwordIsGood(password: password.text!) {
+                //Blablabla
+            }
+        }
+        else {
+            //Blablabla
+        }
     }
     
     @IBAction func signin() {
