@@ -29,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4452B2622337CFC50093F37F /* Socialize.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Socialize.entitlements; sourceTree = "<group>"; };
 		57699E0E2330C42A003D374D /* Socialize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Socialize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57699E112330C42A003D374D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57699E132330C42A003D374D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +84,7 @@
 		57699E102330C42A003D374D /* Socialize */ = {
 			isa = PBXGroup;
 			children = (
+				4452B2622337CFC50093F37F /* Socialize.entitlements */,
 				57699E112330C42A003D374D /* AppDelegate.swift */,
 				57699E132330C42A003D374D /* ViewController.swift */,
 				57699E152330C42B003D374D /* Main.storyboard */,
@@ -372,8 +374,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Socialize/Socialize.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Socialize/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -381,7 +385,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.victor.Socialize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -389,8 +393,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Socialize/Socialize.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Socialize/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -398,7 +404,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.victor.Socialize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
